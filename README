@@ -1,0 +1,5 @@
+# Abstract vs Interface 
+
+
+Interface is class with all function is pure virtual 
+Abstract is class with virtual function and at least 1 pure virtual make it can not innitialize 
