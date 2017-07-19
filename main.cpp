@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
     return a.exec();
 
     // exit file
-
-    // Make conflick on this file hahahaah
+    // Hahaha make conflick from local
+    // yeah yeah yeah
 
 }
