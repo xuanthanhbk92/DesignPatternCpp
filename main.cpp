@@ -7,6 +7,8 @@
 #include "Creation/prototype.h"
 #include "Creation/factorymethod.h"
 #include "Behavior/command.h"
+#include "Structure/adapter.h"
+#include "Structure/decorate.h"
 
 int main(int argc, char *argv[])
 {
@@ -82,6 +84,27 @@ int main(int argc, char *argv[])
     std::cout << CupRed->color<< std::endl;
     Cup* CupBlue = Cup::getCup("blue");
      std::cout << CupBlue->color<<std::endl;
+
+
+     // Adapter
+     qDebug() << "*************** Command method ************";
+     Adapter newRec(2,3,5,6);
+     newRec.draw();
+     // Decorator
+     qDebug() << "*************** Decorator ************";
+    Sung * SPK1 = new PhuKien1(new SungCoBan);
+    Sung * SPK2 = new PhuKien2(new SungCoBan);
+    Sung * SPK12 = new PhuKien1(new PhuKien2(new SungCoBan));
+
+
+    SPK1->ban();
+    SPK2->ban();
+    SPK12->ban();
+
+    delete SPK1;
+    delete SPK2;
+    delete SPK12;
+
 
      // Command
      qDebug() << "*************** Command method ************";

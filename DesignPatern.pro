@@ -16,7 +16,9 @@ SOURCES += main.cpp \
     Creation/objectpool.cpp \
     Creation/prototype.cpp \
     Creation/factorymethod.cpp \
-    Behavior/command.cpp
+    Behavior/command.cpp \
+    Structure/adapter.cpp \
+    Structure/decorate.cpp
 
 HEADERS += \
     Creation/singleton.h \
@@ -25,7 +27,9 @@ HEADERS += \
     Creation/objectpool.h \
     Creation/prototype.h \
     Creation/factorymethod.h \
-    Behavior/command.h
+    Behavior/command.h \
+    Structure/adapter.h \
+    Structure/decorate.h
 
 DISTFILES += \
     Creation/ReadMe.md \
